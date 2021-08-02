@@ -1,0 +1,12 @@
+[local]
+manager ansible_connection=local
+
+[nodes:children]
+debian
+
+[ubuntu]
+manager
+
+[debian]
+hedgedoc ansible_host=192.168.1.20
+ 
