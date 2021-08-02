@@ -1,0 +1,46 @@
+<mxfile host="app.diagrams.net" modified="2021-08-02T13:55:09.672Z" agent="5.0 (Windows)" etag="lQmgY2qH6b_qvhh0cYdZ" version="14.9.3" type="github">
+  <diagram id="gD9zFze_iH9A4-duQnMR" name="Page-1">
+    <mxGraphModel dx="1422" dy="752" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="Wq6ExzQXXfVbq-2wo47K-11" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontColor=#333333;" parent="1" vertex="1">
+          <mxGeometry x="300" y="20" width="420" height="620" as="geometry" />
+        </mxCell>
+        <mxCell id="Wq6ExzQXXfVbq-2wo47K-2" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
+          <mxGeometry x="360" y="40" width="330" height="540" as="geometry" />
+        </mxCell>
+        <mxCell id="Wq6ExzQXXfVbq-2wo47K-3" value="" style="aspect=fixed;html=1;points=[];align=center;image;fontSize=12;image=img/lib/mscae/Docker.svg;" parent="1" vertex="1">
+          <mxGeometry x="390" y="530" width="50" height="41" as="geometry" />
+        </mxCell>
+        <mxCell id="Wq6ExzQXXfVbq-2wo47K-4" value="HedgeDoc" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
+          <mxGeometry x="390" y="100" width="150" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="Wq6ExzQXXfVbq-2wo47K-5" value="MariaDB" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" parent="1" vertex="1">
+          <mxGeometry x="390" y="315" width="160" height="115" as="geometry" />
+        </mxCell>
+        <mxCell id="Wq6ExzQXXfVbq-2wo47K-7" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontColor=#333333;" parent="1" vertex="1">
+          <mxGeometry x="30" y="80" width="190" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="Wq6ExzQXXfVbq-2wo47K-6" value="" style="shape=image;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;verticalAlign=top;aspect=fixed;imageAspect=0;image=https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.B26wg8u7Y_An8LyqzJBvIgAAAA%26pid%3DApi%26h%3D160&amp;f=1;" parent="1" vertex="1">
+          <mxGeometry x="50" y="187.5" width="60" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Wq6ExzQXXfVbq-2wo47K-8" value="&lt;div&gt;AnsibleCtl&lt;/div&gt;" style="image;html=1;image=img/lib/clip_art/computers/Laptop_128x128.png" parent="1" vertex="1">
+          <mxGeometry x="85" y="90" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="Wq6ExzQXXfVbq-2wo47K-9" value="" style="shape=image;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;verticalAlign=top;aspect=fixed;imageAspect=0;image=https://yunohost.org/user/images/HedgeDoc-Logo.png;" parent="1" vertex="1">
+          <mxGeometry x="390" y="100" width="40" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Wq6ExzQXXfVbq-2wo47K-10" value="" style="shape=image;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;verticalAlign=top;aspect=fixed;imageAspect=0;image=https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse3.mm.bing.net%2Fth%3Fid%3DOIP.07o-h2eJVJOJNVq2Z-2clQHaGs%26pid%3DApi&amp;f=1;" parent="1" vertex="1">
+          <mxGeometry x="390" y="315" width="55.37" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="Wq6ExzQXXfVbq-2wo47K-12" value="" style="shape=image;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;verticalAlign=top;aspect=fixed;imageAspect=0;image=http://fc01.deviantart.net/fs70/i/2012/338/9/c/vmware_vsphere_client_replacement_icon_ios_style_by_flakshack-d5n1d46.png;" parent="1" vertex="1">
+          <mxGeometry x="300" y="570.5" width="69.5" height="69.5" as="geometry" />
+        </mxCell>
+        <mxCell id="Wq6ExzQXXfVbq-2wo47K-14" value="Machine virtuelle: VM Maquette" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="397.68" y="610" width="222.32" height="20" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
