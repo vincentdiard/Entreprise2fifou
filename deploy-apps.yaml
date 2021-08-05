@@ -1,14 +1,22 @@
 - name: PLAY déploiement docker-compose
   hosts: hedgedoc
   tasks:
-    - name: installer les prérequis python
+    - name: Installation prérequis python
       ansible.builtin.apt:
-        name: python3-pip
+        name: ['python', 'python3-pip','python-setuptools']
 
-    - name: installation des librairies python
-      ansible.builtin.pip:
-        name: docker
+    - name: Install and upgrade pip
+      pip:
+        name: pip
+        extra_args: --upgrade
         executable: pip3
+        
+    - name: installation docker et docker-compose
+      ansible.builtin.pip:
+        name: ['docker-compose', 'docker']
+        executable: pip3
+
+
       
     - name: checkout git
       ansible.builtin.git:
