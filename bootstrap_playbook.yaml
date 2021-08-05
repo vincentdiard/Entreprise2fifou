@@ -2,7 +2,7 @@
 
 - name: PLAY creation utilisateur ansible
   # Variabilisation de la valeur hosts (pattern) pour pouvoir la définir au lancement du play
-  hosts: "{{ cible | default('all') }}"
+  hosts: hedgedoc
 
   tasks:
 

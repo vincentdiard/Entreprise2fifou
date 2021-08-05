@@ -1,0 +1,16 @@
+- name: PLAY déploiement docker-compose
+  hosts: hedgedoc
+  tasks:
+    - name: installer les prérequis python
+      ansible.builtin.apt:
+        name: python3-pip
+
+    - name: installation des librairies python
+      ansible.builtin.pip:
+        name: docker
+        executable: pip3
+
+    - name: deploiement docker-compose
+      community.docker.docker_compose:
+        project_src: /home/stagiaire/Entreprise2fifou/hedgedoc_mariadb
+      register: output
