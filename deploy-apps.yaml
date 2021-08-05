@@ -9,8 +9,16 @@
       ansible.builtin.pip:
         name: docker
         executable: pip3
+      
+    - name: checkout git
+      ansible.builtin.git:
+        repo: "https://github.com/davidchdebray/hedgedoc_mariadb.git"
+        dest: /home/stagiaire/Entreprise2fifou
+        single_branch: yes
+        version: main
+        force: yes
 
     - name: deploiement docker-compose
       community.docker.docker_compose:
-        project_src: /home/stagiaire/Entreprise2fifou/hedgedoc_mariadb
+        project_src: /home/stagiaire/Entreprise2fifou/
       register: output

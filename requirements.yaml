@@ -6,7 +6,7 @@
 # on va ensuite rebondir sur le concept de variables
 ---
 - name: PLAY prerequis outils sur infra
-  hosts: nodes
+  hosts: hedgedoc
   become: true
 
   # Declarer un block vars:
