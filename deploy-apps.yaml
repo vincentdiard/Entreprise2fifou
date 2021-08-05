@@ -1,5 +1,5 @@
 - name: PLAY déploiement docker-compose
-  hosts: hedgedoc
+  hosts: all
   tasks:
     - name: Installation prérequis python
       ansible.builtin.apt:
