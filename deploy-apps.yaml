@@ -1,5 +1,5 @@
 - name: PLAY déploiement docker-compose
-  hosts: hedgedoc
+  hosts: davidtest
   tasks:
     - name: Installation prérequis python
       ansible.builtin.apt:
@@ -17,16 +17,19 @@
         executable: pip3
 
 
-      
     - name: checkout git
       ansible.builtin.git:
         repo: "https://github.com/davidchdebray/hedgedoc_mariadb.git"
-        dest: /home/stagiaire/Entreprise2fifou
-        single_branch: yes
-        version: main
+        dest: /home/stagiaire/ProjetCapGemini/DOCUMENTATION
+        # single_branch: yes
+        # version: main
         force: yes
+      tags: always
 
     - name: deploiement docker-compose
       community.docker.docker_compose:
-        project_src: /home/stagiaire/Entreprise2fifou/
+        project_name: "HedgeDoc_MariaDB"
+        project_src: /home/stagiaire/ProjetCapGemini/DOCUMENTATION
+        restarted: yes
+        state: present
       register: output
