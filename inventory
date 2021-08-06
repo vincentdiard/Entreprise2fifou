@@ -7,8 +7,10 @@ debian
 [ubuntu]
 manager
 
-[debian]
+[debian] 
 hedgedoc ansible_host=192.168.1.20
+
+    
  
 [david]
 davidtest ansible_host=192.168.3.3

@@ -1,32 +1,34 @@
 - name: PLAY déploiement docker-compose
   hosts: hedgedoc
+
+  vars_files:
+    - myvars.yml
+
   tasks:
     - name: Installation prérequis python
       ansible.builtin.apt:
         name: ['python', 'python3-pip','python-setuptools']
-
-    - name: Install and upgrade pip
-      pip:
-        name: pip
-        extra_args: --upgrade
-        executable: pip3
         
     - name: installation docker et docker-compose
       ansible.builtin.pip:
         name: ['docker-compose', 'docker']
-        executable: pip3
-
-
-      
+        executable: pip3   
+     
     - name: checkout git
       ansible.builtin.git:
-        repo: "https://github.com/davidchdebray/hedgedoc_mariadb.git"
-        dest: /home/stagiaire/Entreprise2fifou
-        single_branch: yes
-        version: main
+        repo: "{{app_git}}"
+        dest: "{{app_path}}/git"
+#        single_branch: yes
+#        version: main
         force: yes
+      tags: always
+
 
     - name: deploiement docker-compose
       community.docker.docker_compose:
-        project_src: /home/stagiaire/Entreprise2fifou/
+        project_name: "{{file_name}}"
+        project_src: "{{app_path}}/git/"
+        restarted: yes
+        state: present
       register: output
+
