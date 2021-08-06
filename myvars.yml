@@ -1,4 +1,4 @@
 ---
 app_git: "https://github.com/davidchdebray/hedgedoc_mariadb.git"
-app_path: /home/stagiaire
+app_path: "/home/ansible/docker_apps"
 file_name: "HedgeDoc_MariaDB"

@@ -1,6 +1,6 @@
 - name: PLAY déploiement docker-compose
 
-  hosts: hedgedoc
+  hosts: davidtest
 
   vars_files:
     - myvars.yml
@@ -18,7 +18,7 @@
     - name: checkout git
       ansible.builtin.git:
         repo: "{{app_git}}"
-        dest: "{{app_path}}/git"
+        dest: "{{app_path}}/{{file_name}}"
 #        single_branch: yes
 #        version: main
         force: yes
@@ -28,7 +28,7 @@
     - name: deploiement docker-compose
       community.docker.docker_compose:
         project_name: "{{file_name}}"
-        project_src: "{{app_path}}/git/"
+        project_src: "{{app_path}}/{{file_name}}"
         restarted: yes
         state: present
       register: output

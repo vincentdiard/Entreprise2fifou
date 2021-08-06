@@ -8,10 +8,12 @@ debian
 manager
 
 [debian] 
-hedgedoc ansible_host=192.168.1.20    
+hedgedoc ansible_host=192.168.1.20 
+[debian:vars]
+ansible_python_interpreter=/usr/bin/python3  
  
 [david]
 davidtest ansible_host=192.168.3.3
-
-[hedgedoc:vars]
+[david:vars]
 ansible_python_interpreter=/usr/bin/python3
+
