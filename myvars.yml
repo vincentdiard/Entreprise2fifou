@@ -1,4 +1,4 @@
 ---
 app_git: "https://github.com/davidchdebray/hedgedoc_mariadb.git"
-app_path: $( pwd )
+app_path: /home/stagiaire
 file_name: "HedgeDoc_MariaDB"
