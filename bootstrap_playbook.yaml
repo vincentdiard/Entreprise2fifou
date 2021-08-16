@@ -3,6 +3,7 @@
 - name: PLAY creation utilisateur ansible
   # Variabilisation de la valeur hosts (pattern) pour pouvoir la définir au lancement du play
   hosts: "{{ cible | default('all') }}"
+  become: yes
 
   tasks:
 
@@ -18,7 +19,7 @@
       ansible.posix.authorized_key:
         user: ansible
         state: present
-        key: "{{ lookup('file', '/home/stagiaire/.ssh/id_ed25519.pub') }}"
+        key: "{{ lookup('file', '/home/ansible/.ssh/id_ed25519.pub') }}"
     # Déclaration d'une troisieme task pour générer un fichier de config sudo dédié au user ansible
     - name: Module copy pour s'assurer q'une fichier sudo pour ansible soit présent avec un contenu précis
       ansible.builtin.copy:

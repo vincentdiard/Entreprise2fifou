@@ -1,6 +1,7 @@
 - name: PLAY déploiement docker-compose
 
-  hosts: davidtest
+  hosts: "{{ cible | default('targets') }}"
+  become: true
 
   vars_files:
     - myvars.yml

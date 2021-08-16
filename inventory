@@ -2,18 +2,15 @@
 manager ansible_connection=local
 
 [nodes:children]
-debian
+ubuntu
 
 [ubuntu]
 manager
 
-[debian] 
-hedgedoc ansible_host=192.168.1.20 
-[debian:vars]
-ansible_python_interpreter=/usr/bin/python3  
- 
-[david]
-davidtest ansible_host=192.168.3.3
-[david:vars]
+
+
+[targets]
+cbddvd-devops-target ansible_host=46.101.251.76
+[targets:vars]
 ansible_python_interpreter=/usr/bin/python3
 
